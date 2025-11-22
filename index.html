@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Apology for Soumya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffb3ba 0%, #e0b3ff 100%);
+            color: #333;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Dancing Script', cursive;
+        }
+        .hero {
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .btn {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: glow 2s infinite alternate;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .section {
+            margin: 50px 0;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .love-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .love-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.5s ease-out forwards;
+        }
+        .love-card:nth-child(1) { animation-delay: 0.5s; }
+        .love-card:nth-child(2) { animation-delay: 1s; }
+        .love-card:nth-child(3) { animation-delay: 1.5s; }
+        .love-card:nth-child(4) { animation-delay: 2s; }
+        .love-card:nth-child(5) { animation-delay: 2.5s; }
+        .love-card:nth-child(6) { animation-delay: 3s; }
+        .big-love {
+            font-size: 2rem;
+            color: #ff69b4;
+            text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+            animation: glow 2s infinite alternate;
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #ff69b4;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup-content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff69b4;
+            animation: fall 2s linear forwards;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+            to { box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); }
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #ff69b4; }
+        }
+        @keyframes fall {
+            to { transform: translateY(100vh); opacity: 0; }
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .love-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>I’m Sorryyyy… Myyy Babyy ❤️</h1>
+            <p>Sonaa, you’re the best thing that ever happened in my life.</p>
+            <button class="btn" onclick="scrollToSection('apology')">Tap to see what’s in my heart</button>
+        </section>
+
+        <section id="apology" class="section">
+            <div class="card">
+                <p>Soumya, I’m really sorry for everything. I never want to make you feel this way... You mean everything to me… and hurting you is the last thing I ever want to do…. Baby, I’m still learning…. still growing, and I promise to love you better every single day and be the best. I know you don’t want to get back with me, but it’s fine… at least be there for me, honey… I really need you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Why I Love You So Much 💗</h2>
+            <div class="love-cards">
+                <div class="love-card">
+                    <p>Your smile is my safe place, lighting up my darkest days.</p>
+                </div>
+                <div class="love-card">
+                    <p>You are my world, Sona, the center of my universe.</p>
+                </div>
+                <div class="love-card">
+                    <p>You understand me like no one else, sweetheart, seeing into my soul.</p>
+                </div>
+                <div class="love-card">
+                    <p>You are my peace, my happiness, my home, my everything.</p>
+                </div>
+                <div class="love-card">
+                    <p>Your laughter is the melody that makes my heart dance.</p>
+                </div>
+                <div class="love-card">
+                    <p>With you, every moment feels like a beautiful dream.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="big-love">
+                <div class="typewriter">I Love You Sooooo Muchhh Sonaa 💖</div>
+            </div>
+            <p>Always yours, Amaan</p>
+        </section>
+
+        <section class="section">
+            <button class="btn" onclick="showPopup()">If you forgive me, tap here 🥺💗</button>
+        </section>
+
+        <footer>
+            Made with love by Amaan for Soumya ❤️
+        </footer>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>You just made my whole world brighter, honeyyy… Thank you soooo muchhh, my love.</p>
+            <button class="btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+            createConfetti();
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        function createConfetti() {
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 3000);
+            }
+        }
+    </script>
+</body>
+</html>
